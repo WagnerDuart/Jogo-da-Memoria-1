@@ -1,0 +1,148 @@
+/* reset */
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  font-family: "Anton", sans-serif;
+}
+
+/* game */
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: url(../images/papai-noel-fundo.png);
+  background-size: cover;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px 50px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  max-width: 800px;
+  padding: 25px;
+  margin: 0 0 25px;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  aspect-ratio: 3/4;
+  width: 100%;
+  background-color: #333;
+  border-radius: 5px;
+  position: relative;
+  transition: all 400ms ease;
+  transform-style: preserve-3d;
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  border-radius: 5px;
+  background-position: center;
+  border: red;
+  transition: all 400ms ease;
+}
+
+.card_front {
+  transform: rotateY(180deg);
+}
+
+.card_back {
+  background-image: url("../images/papel_natal.png");
+  backface-visibility: hidden;
+  background-color: blue;
+}
+
+.reveal_card {
+  transform: rotateY(180deg);
+}
+
+.disabled_card {
+  filter: saturate(0);
+  opacity: 0.5;
+}
+
+.victory-message {
+  display: block; /* Isso fará a mensagem e o botão serem exibidos quando o jogo terminar */
+  /* Outros estilos que você deseja adicionar à mensagem */
+}
+
+/* login */
+
+.game-section {
+  display: none;
+}
+
+.login_form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.login_header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.login_header img {
+  width: 100px;
+  font-size: 1.5rem;
+}
+
+.login_input {
+  border: 2px solid #333;
+  border-radius: 8px;
+  color: #333;
+  font-size: 1em;
+  margin-bottom: 15px;
+  max-width: 300px;
+  outline: none;
+  padding: 15px;
+  width: 100%;
+}
+
+.login_button {
+  background-color: blue;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  max-width: 300px;
+  padding: 15px;
+  width: 100%;
+}
+
+.login_button:disabled {
+  background-color: #eee;
+  color: #aaa;
+}
