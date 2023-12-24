@@ -4,37 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-
     <script defer src="./js/script.js"></script>
-
     <title>Jogo da Mémoria</title>
   </head>
   <body>
-    <form class="login_form">
+    <form class="login_form" id="loginForm">
       <div class="login_header">
         <img src="./images/presentes-de-natal.png" alt="presentes image" />
         <h1>JOGO DA MEMÓRIA</h1>
       </div>
-
       <input type="text" placeholder="Nome" class="login_input" />
       <button type="submit" class="login_button" disabled>Jogar</button>
     </form>
-    <main class="game-section">
+    <main class="game-section" style="display: none">
       <header>
         <span class="player"></span>
         <span>
           Tempo: <span class="timer">00</span> Pontuação:
-          <span class="score">0</span></span
-        >
+          <span class="score">0</span></span>
       </header>
-
-      <div class="victory-message" style="display: none">
-        Parabéns, <span class="player"></span>! Você conseguiu! Seu tempo foi:
-        <span class="timer">00</span> segundos.
-        <button class="play-again-button">Jogar Novamente</button>
-      </div>
-
       <div class="grid"></div>
     </main>
+    <div class="victory_Screen" id="victoryScreen" style="display: none">
+      <img src="./images/presentes-de-natal.png" alt="presentes image" />
+      <p>Parabéns, <span class="player"></span>! Você conseguiu!</p>
+      <p>Seu tempo foi: <span class="timer">00</span> segundos.</p>
+      <p>Sua pontuação foi: <span class="score">0</span> pontos.</p>
+      <button class="play-again-button">Jogar Novamente</button>
+    </div>
   </body>
 </html>

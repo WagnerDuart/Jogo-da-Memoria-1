@@ -1,5 +1,3 @@
-/* reset */
-
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 * {
@@ -28,12 +26,12 @@ main {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; 
   background-color: rgba(255, 255, 255, 0.6);
   width: 100%;
   max-width: 800px;
   padding: 25px;
-  margin: 0 0 25px;
+  margin: 0 auto 25px; 
   font-size: 1.2em;
   border-radius: 5px;
 }
@@ -88,8 +86,7 @@ header {
 }
 
 .victory-message {
-  display: block; /* Isso fará a mensagem e o botão serem exibidos quando o jogo terminar */
-  /* Outros estilos que você deseja adicionar à mensagem */
+  display: block; 
 }
 
 /* login */
@@ -104,6 +101,7 @@ header {
   flex-direction: column;
   height: 100vh;
   justify-content: center;
+
 }
 
 .login_header {
@@ -131,8 +129,8 @@ header {
   width: 100%;
 }
 
-.login_button {
-  background-color: blue;
+.login_button, .play-again-button {
+  background-color: #c11525;
   border-radius: 8px;
   color: #fff;
   cursor: pointer;
@@ -145,4 +143,25 @@ header {
 .login_button:disabled {
   background-color: #eee;
   color: #aaa;
+}
+
+/* reset */
+
+.victory_Screen{
+  font-size: 1.2em;
+  display: none; 
+  position: fixed;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 400px; 
+  padding: 20px;
+  text-align: center; 
+  border-radius: 8px;
+  z-index: 9999;
+}
+
+.victory_Screen img{
+  width: 100px;
 }
