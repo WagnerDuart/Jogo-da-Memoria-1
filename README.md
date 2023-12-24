@@ -35,12 +35,11 @@ Nesta versão do jogo da memória, o jogador precisa encontrar pares de cartas c
 
 ## Créditos
 
-- Imagens de cartas: [Imagens](https://www.flaticon.com/br/buscar?author_id=1&style_id=15&type=standard&word=personagens-de-natal){:target="_blank"}
+- Imagens de cartas: [Imagens](https://www.flaticon.com/br/buscar?author_id=1&style_id=15&type=standard&word=personagens-de-natal)
 
-- Inspirado por: [Referência](https://youtu.be/0SeqdHCBYVo?si=9lZR_fV4B13sXrpO){:target="_blank"}
-
+- Inspirado por: [Referência](https://youtu.be/0SeqdHCBYVo?si=9lZR_fV4B13sXrpO)
 ---
 
 ## Licença
 
-Este projeto está licenciado sob a [Licença] - ().
+Este projeto está licenciado sob a [Licença](https://github.com/WagnerDuart/Jogo-da-Memoria-1/blob/main/LICENSE).
